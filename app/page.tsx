@@ -8,7 +8,8 @@ import {
 } from "@/components/ui/card";
 import SalesChart from "@/components/charts/sales-chart";
 import SharesChart from "@/components/charts/products-chart";
-import MarketShareChart from "@/components/charts/market-share";
+import MarketShareChart from "@/components/charts/market-share-chart";
+import AdvertisingChart from "@/components/charts/advertising-chart";
 
 export default function Home() {
   return (
@@ -31,6 +32,12 @@ export default function Home() {
           description="A pie chart showing total market share."
         >
           <MarketShareChart />
+        </ChartCard>
+        <ChartCard
+          title="Advertising Chart"
+          description="A scatter chart showing advertising budget."
+        >
+          <AdvertisingChart />
         </ChartCard>
       </div>
     </div>

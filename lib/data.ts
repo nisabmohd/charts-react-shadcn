@@ -32,3 +32,16 @@ export const PIE_CHART_DATA = [
   { company: "Company B", marketShare: 20 },
   { company: "Company C", marketShare: 15 },
 ];
+
+export const SCATTER_CHART_DATA = [
+  { product: "Product A", advertisingBudget: 5000 },
+  { product: "Product B", advertisingBudget: 7000 },
+  { product: "Product C", advertisingBudget: 3000 },
+  { product: "Product D", advertisingBudget: 10000 },
+  { product: "Product E", advertisingBudget: 4000 },
+  { product: "Product F", advertisingBudget: 6000 },
+  { product: "Product G", advertisingBudget: 8000 },
+  { product: "Product H", advertisingBudget: 2000 },
+  { product: "Product I", advertisingBudget: 9000 },
+  { product: "Product J", advertisingBudget: 5000 },
+];

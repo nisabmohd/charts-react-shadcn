@@ -1,38 +1,40 @@
 "use client";
 
-import { BAR_CHART_DATA } from "@/lib/data";
+import { SCATTER_CHART_DATA } from "@/lib/data";
 import {
   CartesianGrid,
   Legend,
+  ResponsiveContainer,
+  Scatter,
+  ScatterChart,
   Tooltip,
   XAxis,
   YAxis,
-  ResponsiveContainer,
-  Bar,
-  BarChart,
+  ZAxis,
 } from "recharts";
 
-export default function SharesChart() {
+export default function AdvertisingChart() {
   return (
     <ResponsiveContainer width="100%" minHeight={300} className="-mx-5 mt-2">
-      <BarChart data={BAR_CHART_DATA}>
+      <ScatterChart>
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="department" />
-        <YAxis dataKey="productsSold" />
+        <XAxis dataKey="product" />
+        <YAxis dataKey="advertisingBudget" />
         <Tooltip
           contentStyle={{
             backgroundColor: "hsl(var(--background))",
           }}
+          itemStyle={{
+            color: "inherit",
+          }}
         />
         <Legend />
-        <Bar
-          type="monotone"
-          name="Product sold"
-          dataKey="productsSold"
+        <Scatter
+          name="Advertising budget"
+          data={SCATTER_CHART_DATA}
           fill="hsl(var(--primary))"
-          barSize="80"
         />
-      </BarChart>
+      </ScatterChart>
     </ResponsiveContainer>
   );
 }

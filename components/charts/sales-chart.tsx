@@ -26,6 +26,7 @@ export default function SalesChart() {
         />
         <Legend />
         <Line
+          name="Sales"
           type="monotone"
           dataKey="sales"
           stroke="hsl(var(--primary))"
