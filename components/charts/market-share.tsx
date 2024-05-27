@@ -24,6 +24,7 @@ export default function MarketShareChart() {
           cy="50%"
           fill="hsl(var(--primary))"
           stroke="hsl(var(--muted))"
+          strokeWidth={3}
           label
         />
       </PieChart>
